@@ -1,4 +1,4 @@
-# NLP-Text-Classification
+# Comparison of traditional machine learning models using the example of text classification of twitter data
 
 ## Abstract
 Traditional machine learning models have been around for
@@ -28,6 +28,7 @@ at the moment most research is done with. In this paper, I want to demonstrate
 the differences between traditional machine learning models and determine their
 performance. All of this will be done using the example of text classification of
 twitter data.
+
 My work is based on the paper of Thomas Davidson, Dana Warmsley, Michael
 Macy, and Ingmar Webe[4]. I will use their dataset of roughly 24 thousand ex-
 tracted and classified tweets from Twitter to train and evaluate my machine
@@ -45,11 +46,36 @@ not a formal definition for hate speech. Different papers give different definit
 on what hate speech is. The research paper which my work is based on itself[4]
 states that hate speech is directed towards a group of people and the goal is to
 harm them in some way.
+
 Since the definition of hate speech is not clear yet, I decided to summarize the
 two categories hate speech and offensive language and call them offensive lan-
 guage+. This category consists of all the tweets which in the original paper[4]
 were labeled as hate speech or offensive language. My second category will sim-
 ply be the tweets which were labeled as normal.
+
+In traditional machine learning, different models have different assumptions
+about the data and therefore vary in performance. I want to evaluate which
+traditional machine learning model scores the best performance on text classifi-
+cation. Therefore, the following research question arises:
+
+”Which traditional machine learning model has the best performance
+on text classification of twitter data?”
+
+To evaluate the performance, the following four metrics will be collected for each
+model: accuracy, precision, recall and F1-Score. Since the problem statement is
+a classification task, I can only use supervised algorithms to solve this problem.
+These are the algorithms which I will collect the metrics for: Logistic Regres-
+sion, K-Neighbours Classifier, Gaussian Naive Bayes, Multinomial Naive Bayes,
+Support Vector Machine, Decision Tree, Random Forrest. I will use different
+parameters to test the models under different circumstances. For example, I will
+add new engineered features to the models and test them with and without those
+features. To create these features, I will use Exploratory Data Analysis (EDA)
+to get insight to the data and engineer new features. At the end, all the results
+will be summarized in a big result table which shows all the metrics for each
+model with all the parameters tested.
+
+<b>You can find the full paper in the PDF-File in this folder</b>
+
 
 
 
